@@ -24,6 +24,18 @@
   margin-top: 5px;
   font-size: 17px;
   color: rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+.user-component__subtitle span {
+  color: red;
+  border: 1.5px solid red;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
 }
 
 .user-component__avatar--xl {
