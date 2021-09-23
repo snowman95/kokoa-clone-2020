@@ -17,6 +17,7 @@
 .status-bar__column:nth-child(2) {
   display: flex;
   justify-content: center;
+  font-weight: 800;
 }
 .status-bar__column:last-child {
   display: flex;
