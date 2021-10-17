@@ -1,3 +1,61 @@
+@keyframes fall {
+  0% {
+    opacity: 0.9;
+    top: 0;
+  }
+  100% {
+    opacity: 0.2;
+    top: 100%;
+  }
+}
+@keyframes blow-medium-left {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -100%;
+  }
+}
+@keyframes blow-soft-right {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: 50%;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes display-glow {
+  0% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: var(--display-glow);
+  }
+  100% {
+    box-shadow: none;
+  }
+}
+@keyframes title-fade-out {
+  0% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.welcome {
+  height: 100vh;
+  background-color: black;
+  animation: fade-in 2s ease-in-out;
+}
 .welcome-header {
   display: flex;
   flex-direction: column;
@@ -5,13 +63,26 @@
   text-align: center;
   margin-top: 90px 0px;
   padding: 50px;
+  color: white;
+}
+.welcome-img {
+  width: 100%;
+  position: relative;
+}
+.welcom-img-effect {
+  position: absolute;
+  opacity: 0;
+  top: 5;
+  animation: title-fade-out 5s linear infinite;
 }
 .welcome-header__title {
   margin: 30px;
   font-size: 20px;
   font-weight: 600;
+  color: red;
 }
 .welcome-header__text {
+  animation: display-glow 1s ease-in-out infinite;
   opacity: 0.7;
 }
 
@@ -22,19 +93,22 @@
 }
 
 .login-form__input {
-  border: none;
-  padding: 15px 0px;
-  font-size: 18px;
+  padding: 15px;
   margin-bottom: 25px;
+
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   transition: border-color 0.3s ease-in-out;
 }
 .login-form__input::placeholder {
-  columns: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.4);
 }
 
-.login-form__input:focus {
-  border-color: var(--yellow);
+.login-form__input:focus-within {
+  border-bottom: 5px solid var(--main-color);
+  border-color: var(--main-color);
 }
 
 .login-form__btn {
@@ -42,7 +116,7 @@
   padding: 15px 0px;
   font-size: 18px;
   margin-bottom: 25px;
-  background-color: var(--yellow);
+  background-color: var(--main-color);
   cursor: pointer; /*not-allowd, progress, ...*/
   padding: 20px 0px;
   border-radius: 5px;
