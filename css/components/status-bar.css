@@ -6,6 +6,9 @@
   justify-content: center;
   padding: 5px 3px;
   box-sizing: border-box;
+  background-color: black;
+  color: white;
+  border-bottom: 2px solid var(--main-color);
 }
 .status-bar__column {
   width: 33%;

@@ -1,8 +1,28 @@
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: none;
+  }
+}
+@keyframes appearBtnAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
 .nav {
   position: fixed;
   bottom: 0px;
   width: 100%;
-  background-color: #f9f9fa;
+  background-color: black;
   padding: 20px 50px;
   box-sizing: border-box;
   border-top: 1px solid rgba(121, 121, 121, 0.3);
@@ -15,20 +35,11 @@
   position: relative;
   color: #2e363e;
 }
-
-@keyframes notificationAnimation {
-  0% {
-    transform: none;
-  }
-  50% {
-    transform: translateY(-5px) rotateY(360deg);
-  }
-  100% {
-    transform: none;
-  }
+.nav__link i {
+  color: white;
 }
 .nav__notification {
-  background-color: tomato;
+  background-color: var(--main-color);
   width: 30px;
   height: 30px;
   border-radius: 15px;
@@ -43,7 +54,7 @@
   animation: notificationAnimation 2s ease-in-out infinite;
 }
 .nav__notification__more {
-  background-color: tomato;
+  background-color: var(--main-color);
   width: 5px;
   height: 5px;
   border-radius: 2.5px;
@@ -56,15 +67,6 @@
   left: 30px;
 }
 
-@keyframes appearBtnAnimation {
-  from {
-    opacity: 0;
-  }
-  to {
-    transform: none;
-    opacity: 1;
-  }
-}
 .nav__btn {
   opacity: 0;
   transform: translateY(50px);
