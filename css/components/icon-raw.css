@@ -1,6 +1,7 @@
 .icon-row {
   display: flex;
   justify-content: space-between;
+  color: var(--main-color);
 }
 .icon-row__icon {
   display: flex;
@@ -12,4 +13,5 @@
 }
 .icon-row__icon span {
   margin-top: 18px;
+  color: white;
 }

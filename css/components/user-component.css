@@ -1,17 +1,24 @@
 .user-component {
   justify-content: space-between;
   margin-bottom: 20px;
-}
-.user-component,
-.user-component__column:first-child {
+  width: 100%;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+
+  border-radius: 30px;
+  background-color: var(--main-color);
+  color: black;
 }
 .user-component:hover {
-  border-radius: 30px;
   background-color: var(--point-color);
   color: white;
 }
+.user-component,
+.user-component__column {
+  display: flex;
+  align-items: center;
+}
+
 .user-component__avatar {
   width: 70px;
   height: 70px;
@@ -23,12 +30,9 @@
   font-size: 24px;
   font-weight: 800;
 }
-
 .user-component__subtitle {
   margin-top: 5px;
-  font-size: 17px;
-  color: rgba(0, 0, 0, 0.5);
-  display: flex;
+  font-size: 15px;
 }
 .user-component__subtitle span {
   color: red;
@@ -41,7 +45,6 @@
   align-items: center;
   margin-left: 10px;
 }
-
 .user-component__avatar--xl {
   width: 80px;
   height: 80px;

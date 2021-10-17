@@ -1,13 +1,13 @@
 #chat-screen {
-  background-color: #abc1d1;
-  height: 500vh;
+  background-color: black;
+  height: 100vh;
 }
 #chat-screen .status-bar,
 #chat-screen .alt-header {
   top: 0;
   position: fixed;
   width: 100%;
-  background-color: #abc1d1;
+  background-color: var(--main-color);
   box-sizing: border-box;
 }
 #chat-screen .status-bar {
@@ -37,6 +37,10 @@
     opacity: 1;
   }
 }
+.main-screen {
+  height: calc(100vh - 120px);
+  background-color: black;
+}
 .main-chat {
   margin-top: 100px;
   display: flex;
@@ -56,6 +60,7 @@
   width: 100%;
   display: flex;
   margin-bottom: 25px;
+  color: white;
 }
 
 .message-row--other {
@@ -79,6 +84,7 @@
 
 .message__bubble {
   background-color: white;
+  color: black;
   padding: 13px;
   font-size: 18px;
   border-radius: 15px;
@@ -110,7 +116,7 @@
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: white;
+  background-color: var(--main-color);
   display: flex;
   justify-content: space-between;
   padding: 5px 25px;

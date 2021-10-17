@@ -3,9 +3,10 @@
   --main-color: #da386f;
   --point-color: #db0c51;
   --horizontal-space: 25px;
-  --main-border: 1px solid rgba(0, 0, 0, 0.1);
+  --main-border: 1px solid rgba(0, 0, 0, 0.2);
   --gray: rgba(0, 0, 0, 0.5);
 
+  --black-gradient: linear-gradient(-45deg, black, rgb(16, 16, 16), black);
   --gradient: linear-gradient(-45deg, #db0c51, #da386f, #fcb5cd);
   --shadow: 0 25px 40px rgba(255, 255, 255, 0.3);
   --shadow-deep: 0 25px 40px rgba(255, 255, 255, 0.5);

@@ -1,3 +1,37 @@
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes display-glow {
+  0% {
+    text-shadow: none;
+  }
+  50% {
+    text-shadow: var(--display-glow);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 .friends-display-link {
   text-align: center;
   display: block;
@@ -17,18 +51,6 @@
 .display__count-num {
   margin-bottom: 10px;
 }
-
-@keyframes display-glow {
-  0% {
-    text-shadow: none;
-  }
-  50% {
-    text-shadow: var(--display-glow);
-  }
-  100% {
-    text-shadow: none;
-  }
-}
 .display__money-num,
 .display__count-num span:first-child {
   font-size: 30px;
@@ -37,25 +59,11 @@
 
   text-decoration: underline;
 }
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 .friends-screen {
   padding: 20px var(--horizontal-space) 10px var(--horizontal-space);
   margin-bottom: 70px;
   /* background-color: var(--main-color); */
-  background: var(--gradient);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  background: black;
 }
 
 .friends-screen__channel {
@@ -68,36 +76,25 @@
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .friends-screen__channel:last-child {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.7);
 }
-
-@keyframes hideSplashScreen {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
 #splash-screen {
   background-color: var(--main-color);
   position: absolute;
   top: 0;
-  z-index: 99;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 64px;
+  padding-bottom: 270px;
   /*hideSplashScreen : 마지막 값을 유지*/
-  animation: hideSplashScreen 0.4s ease-in-out forwards;
+  animation: hideSplashScreen 0.6s ease-in-out forwards;
   animation-delay: 1s;
 }
 .splash-screen__logo {
