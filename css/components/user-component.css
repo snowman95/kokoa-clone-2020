@@ -7,7 +7,11 @@
   display: flex;
   align-items: center;
 }
-
+.user-component:hover {
+  color: white;
+  border-radius: 30px;
+  background-color: #db0c51;
+}
 .user-component__avatar {
   width: 70px;
   height: 70px;

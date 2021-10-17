@@ -14,11 +14,13 @@
 
 .friends-screen {
   padding: 0px var(--horizontal-space);
+  background-color: var(--main-color);
+  margin-bottom: 70px;
 }
 
 .friends-screen__channel {
-  margin-top: 25px;
   border-top: var(--main-border);
+  margin-top: 25px;
   padding-top: 15px;
 }
 
@@ -44,16 +46,20 @@
 }
 
 #splash-screen {
-  background-color: var(--yellow);
+  background-color: var(--main-color);
   position: absolute;
-  height: 100vh;
-  width: 100vw;
   top: 0;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 64px;
   /*hideSplashScreen : 마지막 값을 유지*/
   animation: hideSplashScreen 0.4s ease-in-out forwards;
-  animation-delay: 2s;
+  animation-delay: 1s;
+}
+.splash-screen__logo {
+  width: 300px;
 }
