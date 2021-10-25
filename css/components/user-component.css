@@ -33,6 +33,7 @@
 .user-component__subtitle {
   margin-top: 5px;
   font-size: 15px;
+  color: rgba(0, 0, 0, 0.8);
 }
 .user-component__subtitle span {
   color: red;

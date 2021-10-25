@@ -22,20 +22,20 @@
 }
 .recommended-friends__title {
   font-size: 12px;
-  color: var(--gray);
+  color: white;
 }
 .recommended-friends span {
   display: block;
-  margin: 100px 0px;
+  margin: 50px 0px;
   text-align: center;
-  color: var(--gray);
+  color: white;
   font-size: 18px;
 }
 
 .open-chat__header {
   display: flex;
   justify-content: space-between;
-  color: var(--gray);
+  color: white;
   margin-bottom: 25px;
 }
 .open-chat__header span {
